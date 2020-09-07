@@ -2,7 +2,6 @@ import React from "react";
 import IndividualNomination from "./IndividualNomination";
 
 const Nominations = (props) => {
-  console.log(props.nominations);
   return (
     <div className="nominations-component">
       <h2>Nominations</h2>
