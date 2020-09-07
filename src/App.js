@@ -7,7 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 const URL = (term) => {
-  return `https://www.omdbapi.com/?s=${term}&type="movie"&apikey=${process.env.REACT_APP_API_KEY}`;
+  return `https://www.omdbapi.com/?s=${term}&type="movie"&apikey=${REACT_APP_API_KEY}`;
 };
 
 const style = {
