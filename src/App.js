@@ -86,6 +86,7 @@ class App extends React.Component {
                   searchTerm={this.state.searchTerm}
                   movies={this.state.movies}
                   nominateMovie={this.nominateMovie}
+                  nominations={this.state.nominations}
                 />
               </Grid>
 

@@ -9,7 +9,7 @@ class IndividualMovie extends React.Component {
 
   handleClick = (movie) => {
     this.props.nominateMovie(movie);
-    this.btn.setAttribute("disabled", "disabled");
+    this.btn.setAttribute("disabled", true);
     this.setState({
       open: true,
     });
@@ -34,7 +34,7 @@ class IndividualMovie extends React.Component {
         <li>
           {Title} ({Year}){" "}
           <button
-            className="btn fourth"
+            className="btn"
             ref={(btn) => {
               this.btn = btn;
             }}
@@ -52,6 +52,10 @@ class IndividualMovie extends React.Component {
             Movie has been added to your nominations!
           </Alert>
         </Snackbar>
+
+        {this.props.nominations.length === 5
+          ? this.btn.setAttribute("disabled", true)
+          : null}
       </div>
     );
   }

@@ -16,6 +16,7 @@ const SearchResult = (props) => {
               key={movie.imbdbID}
               movie={movie}
               nominateMovie={props.nominateMovie}
+              nominations={props.nominations}
             />
           ))}
         </>

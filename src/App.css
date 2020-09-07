@@ -76,3 +76,7 @@ body {
   text-decoration-line: underline;
   text-decoration-color: #40bcd8;
 }
+
+.nominations-notification {
+  color: #d90429;
+}
