@@ -29,6 +29,7 @@ class IndividualMovie extends React.Component {
 
   render() {
     const { Title, Year } = this.props.movie;
+
     return (
       <div className="movie">
         <li>

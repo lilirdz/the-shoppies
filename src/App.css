@@ -36,6 +36,8 @@ body {
 
 .movie {
   margin-bottom: 12px;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 .btn {
@@ -79,4 +81,20 @@ body {
 
 .nominations-notification {
   color: #d90429;
+}
+
+img {
+  width: 30%;
+  height: 30%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+span {
+  padding-left: 20px;
 }

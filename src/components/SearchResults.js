@@ -12,12 +12,14 @@ const SearchResult = (props) => {
       ) : (
         <>
           {props.movies.map((movie) => (
-            <IndividualMovie
-              key={movie.imbdbID}
-              movie={movie}
-              nominateMovie={props.nominateMovie}
-              nominations={props.nominations}
-            />
+            <>
+              <IndividualMovie
+                key={movie.imbdbID}
+                movie={movie}
+                nominateMovie={props.nominateMovie}
+                nominations={props.nominations}
+              />
+            </>
           ))}
         </>
       )}

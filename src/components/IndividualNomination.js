@@ -15,16 +15,26 @@ function IndividualNomination(props) {
     }
     setOpen(false);
   };
-  const { Title, Year } = props.nomination;
+  const { Title, Year, Poster, imdbID } = props.nomination;
 
   return (
     <div className="movie">
-      <li>
-        {Title} ({Year}){" "}
-        <button className="remove-btn" onClick={handleClick}>
-          Remove
-        </button>
-      </li>
+      <div>
+        <img src={Poster} alt="movie poster" />
+        <span>
+          <a
+            href={`https://www.imdb.com/title/${imdbID}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {Title} ({Year}){" "}
+          </a>
+
+          <button className="remove-btn" onClick={handleClick}>
+            Remove
+          </button>
+        </span>
+      </div>
       <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
         <Alert onClose={handleClose} severity="error">
           Movie has been removed from your nominations!
