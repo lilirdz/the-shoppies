@@ -21,7 +21,7 @@ function IndividualNomination(props) {
     <div className="movie">
       <div>
         <img src={Poster} alt="movie poster" />
-        <span>
+        <span className="nomination-details">
           <a
             href={`https://www.imdb.com/title/${imdbID}`}
             target="_blank"
